@@ -21,3 +21,24 @@ pre code {
     padding: 20px;
     color: black; 
 }
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: hotpink;
+}
+a:active{
+    color:blue;
+}
+a.special {
+    color: yellow;
+}
+#first p:first-child{
+    color: red;
+}
+#first p:last-child{
+    font-weight: bolder;
+}
