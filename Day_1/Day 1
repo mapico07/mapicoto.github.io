@@ -13,7 +13,6 @@
             animation-iteration-count: infinite;
             animation-timing-function: linear;
             animation-direction: alternate;
-
         }
 
         @keyframes square-to-circle {
@@ -43,16 +42,12 @@
                 transform: rotate(180deg);
             }
         }
-
     </style>
-
 </head>
 <body>
-
     <div class="square"></div>
-
 </body>
 <footer>
-
+    <p>This is the footer.</p>
 </footer>
 </html>
