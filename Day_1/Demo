@@ -1,0 +1,67 @@
+
+<!-- Start with ! to show how it populates html basic-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<!-- add title and link to style.css-->
+<link rel="stylesheet" href="css/style.css">
+body { 
+    background-color:grey;
+}
+<!-- demo div.box to fill out box class.  Explain div#id to show id-->
+<div class="box"></div>
+<!-- Done w/ HTML -->
+<style>
+.box {
+    width: 200px; /*give box width and height first, ask why don't we see it */
+    height: 200px;
+    background-color: lightsalmon; /*add some color */
+    margin: 200px auto; /* center it up.  Explain two margins vs four */
+    animation-name: square-to-circle; /* name the animation */
+    animation-duration: 2s; /* how long do we want it to go */
+    animation-delay: .5s; /* low long till it starts on first load */
+    animation-iteration-count: infinite; /* goes on forever */
+    animation-timing-function: linear; /* smooth */
+    animation-direction: alternate; /* squre to circle and then back to square */
+    
+}
+@keyframes square-to-circle { /*add name last */
+  0% {
+      border-radius: 0;
+      background: lightsalmon;
+      transform: rotate(0deg);
+  }
+  25% {
+      border-radius: 50% 0 0 0;
+      background: darksalmon;
+      transform: rotate(45deg);
+  }
+  50% {
+      border-radius: 50% 50% 0 0;
+      background: salmon;
+      transform: rotate(90deg);
+  }
+  75% {
+      border-radius: 50% 50% 50% 0;
+      background: darksalmon;
+      transform: rotate(135deg);
+  }
+  100% {
+      border-radius: 50%;
+      background: lightsalmon;
+      transform: rotate(180deg);
+  }
+}
+.box {
+    animation: square-to-circle 2s .5s infinite linear alternate;
+    /*animation: square-to-circle 2s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;*/
+}
+</style>
