@@ -1,0 +1,10 @@
+import shutil
+
+# Path to the source image
+source_image = '/path/to/source/image.jpg'
+
+# Path to the destination directory
+destination_directory = '/path/to/destination/directory'
+
+# Copy the image to the destination directory
+shutil.copy(source_image, destination_directory)
